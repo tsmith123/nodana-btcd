@@ -41,6 +41,6 @@ COPY --from=build-container /go/bin /bin
 
 VOLUME ["/root/.btcd"]
 
-EXPOSE 18333 18334
+EXPOSE 8333 8334
 
-ENTRYPOINT ["btcd --testnet --rpcuser=abcde --rpcpass=12345"]
+ENTRYPOINT ["btcd"]
